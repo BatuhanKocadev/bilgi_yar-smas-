@@ -96,7 +96,7 @@ namespace bilgi_yarısması
                 btnd.Enabled = false;
                 btnsonraki.Enabled = false;
                 lblsoruno.Text = "5";
-                MessageBox.Show("Doğru : " + dogruno + "\n" + "Yanlış :" + yanlısno + "\n" + durum, "Bilgi", MessageBoxButtons.OK);
+                MessageBox.Show("Doğru : " + dogruno + "\n" + "Yanlışş :" + yanlısno + "\n" + durum, "Bilgi", MessageBoxButtons.OK);
             }
 
             pictureBox1.Visible = false;
