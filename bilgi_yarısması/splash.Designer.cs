@@ -30,21 +30,14 @@
         {
             components = new System.ComponentModel.Container();
             timer1 = new System.Windows.Forms.Timer(components);
-            progressBar1 = new ProgressBar();
             label1 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // timer1
             // 
             timer1.Enabled = true;
             timer1.Interval = 50;
-            // 
-            // progressBar1
-            // 
-            progressBar1.Location = new Point(144, 210);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(374, 45);
-            progressBar1.TabIndex = 0;
             // 
             // label1
             // 
@@ -56,6 +49,17 @@
             label1.TabIndex = 1;
             label1.Text = "Genel Kültür Yarışmasına Hoşgeldiniz";
             // 
+            // button1
+            // 
+            button1.ForeColor = Color.IndianRed;
+            button1.Location = new Point(198, 192);
+            button1.Name = "button1";
+            button1.Size = new Size(268, 85);
+            button1.TabIndex = 2;
+            button1.Text = "Başlamak çin Tıklayın";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // splash
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -63,8 +67,8 @@
             BackColor = Color.IndianRed;
             ClientSize = new Size(707, 450);
             ControlBox = false;
+            Controls.Add(button1);
             Controls.Add(label1);
-            Controls.Add(progressBar1);
             ForeColor = SystemColors.ButtonHighlight;
             FormBorderStyle = FormBorderStyle.None;
             Name = "splash";
@@ -78,7 +82,7 @@
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private ProgressBar progressBar1;
         private Label label1;
+        private Button button1;
     }
 }
